@@ -81,14 +81,31 @@ padding:60px 20px;
 .cta h2{
 color:#00bfff;
 }
-button{
-background:#00bfff;
-border:none;
-padding:15px 35px;
-font-size:16px;
-border-radius:30px;
-cursor:pointer;
+/* Buttons */
+.btns{
+display:flex;
+justify-content:center;
+gap:12px;
 margin-top:20px;
+}
+.btn{
+display:inline-block;
+text-decoration:none;
+color:#000;
+padding:12px 28px;
+border-radius:30px;
+font-weight:600;
+}
+.btn.whatsapp{
+background:#25D366;
+}
+.btn.email{
+background:#00bfff;
+color:#fff;
+}
+.btn:hover{
+opacity:0.9;
+transform:translateY(-3px);
 }
 footer{
 text-align:center;
@@ -140,7 +157,10 @@ From logos to Meta Ads, we turn ideas into profitable visuals.
 <h2>Let’s Grow Your Business</h2>
 <p>Call / WhatsApp us now</p>
 <h1>+91 9898698302</h1>
-<button>Start Your Project</button>
+<div class="btns">
+<a class="btn whatsapp" href="https://wa.me/919898698302?text=Hello%2C%20I%27d%20like%20to%20start%20a%20project" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn email" href="mailto:rksbizindia@gmail.com?subject=Start%20Your%20Project">Email</a>
+</div>
 </section>
 
 <footer>
